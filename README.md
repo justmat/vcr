@@ -9,7 +9,7 @@ a simple Voltage Collection and Recall script for norns + grid + crow
 #### keys
   1. alt
   2. navigate to previous voltage set
-  3. navigat to next voltage set
+  3. navigate to next voltage set
 
 #### encoders
   1. set voltage 1 for the current voltage set
