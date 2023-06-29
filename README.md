@@ -1,6 +1,6 @@
 # vcr
 ![](assets/vcr-photo.png)
-a simple Voltage Collection and Recall script for norns + grid + crow
+a simple Voltage Collection Recall script for norns + grid + crow
 
 ## norns
 
