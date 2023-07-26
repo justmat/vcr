@@ -27,14 +27,7 @@ holding alt will shift focus to a second set of parameters:
 
 ## grid
 
-the grid controls which voltage set gets sent to crow.
-it does not matter *where* you press, just how many keys were pressed at once. 
-
-i.e. pressing 1 key will recall voltage set 1, while pressing 8 keys will recall voltage set 8. 
-
-voltage sets are sent to crow on release of the grid keys.
-
-*n.b. - pressing 10 keys at once will set the crow outputs to 0 volts*
+gotta re-write this before sharing the script.
 
 ## crow
 
