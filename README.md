@@ -27,6 +27,8 @@ holding alt will shift focus to a second set of parameters:
 
 ## grid
 
+![](assets/grid.png)
+
 gotta re-write this before sharing the script.
 
 ## crow
