@@ -29,7 +29,20 @@ holding alt will shift focus to a second set of parameters:
 
 ![](assets/grid.png)
 
-gotta re-write this before sharing the script.
+* **record/play/stop** - multi-function button
+  * while dimly lit - press to engage pattern recorder
+  * while flashing - press to play pattern
+  * while brightly lit - press to stop pattern playback
+* **clear** - press to clear your recorded pattern
+* **grid alt** - a modifier
+
+* **current voltage set buttons** - pressing one of these buttons will select your current voltage set, and send it to crow. if the pattern recorder is armed, your presses here will be recorded. pressing rec/play/stop again will playback your presses, allowing you to set up sequences of voltages
+* **grid alt + current voltage set** - select current voltage set, but don't send it to crow
+
+the **voltage scope** area represents the four crow outputs, arranged vertically 1-4, and their voltages. the far left of the grid represents -5 volts, the constant dimly lit collumn represents 0 volts, and the far right represents 10 volts. outside of the 0 volt collumn, a dimly lit button represents the destination voltage, while a brightly lit button shows the actual current voltage at crows outputs. your slew time determines how long it will take for the actual voltage to reach the destination voltage.
+
+* **voltage scope** - pressing a button here will set a single coarse voltage (use norns encoders to fine tune)
+* **grid alt + voltage scope** - set a single coarse voltage and send it to crow
 
 ## crow
 
