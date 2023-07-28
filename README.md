@@ -11,6 +11,8 @@ a simple Voltage Collection Recall script for norns + grid + crow
   2. navigate to previous voltage set
   3. navigate to next voltage set
 
+  *alt + key 3 will send the current voltage set to crow*
+
 #### encoders
   1. set voltage 1 for the current voltage set
   2. set voltage 2 for the current voltage set
@@ -23,7 +25,6 @@ holding alt will shift focus to a second set of parameters:
   1. **(+ alt)** set slew shape/style for the current voltage set
   2. **(+ alt)** set voltage 4 for the current voltage set
   3. **(+ alt)** set slew time for the current voltage set
-
 
 ## grid
 
