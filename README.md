@@ -30,7 +30,7 @@ holding alt will shift focus to a second set of parameters:
 ![](assets/grid.png)
 
 * **record/play/stop** - multi-function button
-  * while dimly lit - press to engage pattern recorder
+  * while dimly lit - press to arm pattern recorder
   * while flashing - press to play pattern
   * while brightly lit - press to stop pattern playback
 * **clear** - press to clear your recorded pattern
