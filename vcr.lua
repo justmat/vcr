@@ -10,6 +10,7 @@ local g = grid.connect()
 local pt = require 'pattern_time'
 
 local number_of_voltage_sets = 8
+local alt = false
 local g_alt = false
 
 local names = {
