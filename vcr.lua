@@ -53,7 +53,6 @@ end
 
 -- screen/grid redraw flags ----------
 local screen_dirty = true
-local grid_dirty = true
 local start_time = util.time()
 local splash_index = 0
 local blink = false
