@@ -115,6 +115,23 @@ local function parse_pattern(data)
   end
 end
 
+
+local function init_crow()
+-- for grid "scope"
+  for i = 1,4 do
+    crow.output[i].receive = function(v) outs(i,v) end
+  end
+
+  crow_output_volts_query = metro.init()
+  crow_output_volts_query.time = 1/15
+  crow_output_volts_query.event = function()
+    for i = 1,4 do
+      crow.output[i].query()
+    end
+  end
+  crow_output_volts_query:start()
+end
+
 -- script init ----------
 function init()
   print("howdy! let's get vcr-ing")
@@ -152,19 +169,11 @@ function init()
   blink_metro.event = function() blink = not blink end
   blink_metro:start()
 
-  -- for grid "scope"
-  for i = 1,4 do
-    crow.output[i].receive = function(v) outs(i,v) end
+  if norns.crow.connected() then
+    init_crow()
+  else
+    no_crow = true
   end
-
-  crow_output_volts_query = metro.init()
-  crow_output_volts_query.time = 1/15
-  crow_output_volts_query.event = function()
-    for i = 1,4 do
-      crow.output[i].query()
-    end
-  end
-  crow_output_volts_query:start()
   
   -- redraw timer ----------
   redraw_clock = clock.run(
@@ -234,9 +243,17 @@ function redraw()
   screen.clear()
   
   if util.time() - start_time < 3.06 then
-    screen.display_png("/home/we/dust/code/runic/assets/splash/" .. splash_index .. ".png", 0, 0)
+    screen.display_png("/home/we/dust/code/runic/assets/" .. splash_index .. ".png", 0, 0)
     splash_index = (splash_index + 1) % 23
     screen_dirty = true
+  elseif no_crow then
+    -- if there's no crow...
+    screen.move(64, 22)
+    screen.text_center("crow not found.")
+    screen.move(64, 32)
+    screen.text_center("please connect crow")
+    screen.move(64, 42)
+    screen.text_center("and relaunch vcr")
   else
     -- left side shows which voltage set you are looking at and its slew style
     screen.level(12)
