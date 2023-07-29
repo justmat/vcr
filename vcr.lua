@@ -243,7 +243,7 @@ function redraw()
   screen.clear()
   
   if util.time() - start_time < 3.06 then
-    screen.display_png("/home/we/dust/code/runic/assets/splash/" .. splash_index .. ".png", 0, 0)
+    screen.display_png("/home/we/dust/code/vcr/assets/splash/" .. splash_index .. ".png", 0, 0)
     splash_index = (splash_index + 1) % 23
     screen_dirty = true
   elseif no_crow then
