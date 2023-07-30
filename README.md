@@ -23,7 +23,7 @@ holding alt will shift focus to a second set of parameters:
 
   * **alt + enc 1** - set slew shape/style for the current voltage set
   * **alt + enc 2** - set voltage 4 for the current voltage set
-  * **alt + enc 3** set slew time for the current voltage set
+  * **alt + enc 3** - set slew time for the current voltage set
 
 ## grid
 
