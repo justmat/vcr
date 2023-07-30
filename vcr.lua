@@ -191,9 +191,7 @@ function init()
   )
 end
 
-
 -- for pattern_time ----------
-
 local function record_press(v)
   press_pattern:watch(
     {
@@ -201,7 +199,6 @@ local function record_press(v)
     }
   )
 end
-
 
 -- norns hardware, keys/encs/screen ----------
 function key(n, z)
@@ -241,7 +238,7 @@ end
 
 function redraw()
   screen.clear()
-  
+
   if util.time() - start_time < 3.06 then
     screen.display_png("/home/we/dust/code/vcr/assets/splash/" .. splash_index .. ".png", 0, 0)
     splash_index = (splash_index + 1) % 23
@@ -317,7 +314,6 @@ function redraw()
 end
 
 -- grid stuff ----------
-
 function g.key(x, y, z)
   -- grid alt button
   if x == 16 and y == 1 then g_alt = z == 1 and true or false end
