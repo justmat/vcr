@@ -49,6 +49,16 @@ the **voltage scope** area represents the four crow outputs, arranged vertically
 crow outputs 1-4 will carry voltages 1-4 from your voltage sets.
 
 -----------
+# notes
+
+## pattern recording quick start: 
+* press the r/p/s (record/play/stop) button to arm the pattern recorder
+* press some of the voltage set buttons
+* press r/p/s again to playback your pattern
+* press r/p/s yet again to stop playback
+* press clear to clear your pattern
+
+_n.b. the pattern recorder only records presses in the voltage set area._
 
 ## slew shapes/styles
 
